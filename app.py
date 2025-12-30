@@ -486,7 +486,11 @@ def page_local_window():
             ],
             index=0,
         )
-        mode_key = "teacher" if mode_label.startswith("Anchored") else "autoregressive"
+        # ✅ 正确区分两种模式
+        if mode_label.startswith("Teacher"):
+            mode_key = "teacher"
+        else:
+            mode_key = "autoregressive"
     with col_top[2]:
         lookback_label = st.selectbox(
             "Lookback window",
