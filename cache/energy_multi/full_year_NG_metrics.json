@@ -1,0 +1,7 @@
+{
+  "N_days": 249,
+  "MSE_price_Kronos": 0.0889929927691976,
+  "MSE_price_Adapter": 0.04622426628622858,
+  "MSE_logret_Kronos": 0.007330710673633756,
+  "MSE_logret_Adapter": 0.0037303149169997524
+}
